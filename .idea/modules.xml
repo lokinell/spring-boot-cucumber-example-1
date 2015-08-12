@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BootCucumberTest.iml" filepath="$PROJECT_DIR$/BootCucumberTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-cucumber-example-1.iml" filepath="$PROJECT_DIR$/spring-boot-cucumber-example-1.iml" />
     </modules>
   </component>
 </project>

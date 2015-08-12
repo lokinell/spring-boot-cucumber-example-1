@@ -1,4 +1,4 @@
-package demo;
+package demo.steps;
 
 import org.apache.commons.io.IOUtils;
 import org.springframework.http.client.ClientHttpResponse;

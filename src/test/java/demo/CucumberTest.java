@@ -11,6 +11,8 @@ import org.junit.runner.RunWith;
  * Time: 11:09 AM
  */
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources")
+@CucumberOptions(features = "src/test/resources",
+        plugin = {"json:build/cucumber/json/cucumber.json"},
+        glue = {"demo.steps"})
 public class CucumberTest{
 }

@@ -1,4 +1,4 @@
-package demo;
+package demo.steps;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.client.ClientHttpRequest;

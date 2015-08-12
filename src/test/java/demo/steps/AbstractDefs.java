@@ -1,16 +1,11 @@
-package demo;
+package demo.steps;
 
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.IntegrationTest;
-import org.springframework.boot.test.SpringApplicationConfiguration;
+import demo.DemoApplication;
 import org.springframework.boot.test.SpringApplicationContextLoader;
+import org.springframework.boot.test.WebIntegrationTest;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.TestExecutionListeners;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.web.ServletTestExecutionListener;
-import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.web.client.ResponseErrorHandler;
 import org.springframework.web.client.ResponseExtractor;
 import org.springframework.web.client.RestTemplate;
@@ -25,10 +20,8 @@ import java.util.Map;
  * Date: 6/11/15
  * Time: 10:57 AM
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = DemoApplication.class, loader = SpringApplicationContextLoader.class)
-@WebAppConfiguration
-@IntegrationTest
+@ContextConfiguration(classes = {DemoApplication.class}, loader = SpringApplicationContextLoader.class)
+@WebIntegrationTest
 public class AbstractDefs
 {
     protected static ResponseResults latestResponse = null;
